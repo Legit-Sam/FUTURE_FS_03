@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { FeaturedSection } from "@/components/FeaturedSection";
+import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <SEOHead 
+        title="Sonic - Premium Music Experience | Unlimited Streaming"
+        description="Discover music like never before with Sonic. Stream 50M+ songs with lossless audio quality, exclusive artist content, and AI-powered discovery. Get premium access today."
+        keywords="premium music streaming, lossless audio, music discovery, exclusive content, unlimited songs, artist streaming, spotify alternative, high quality music"
+        canonicalUrl="https://sonic-music.app"
+      />
+      <Header />
+      <main>
+        <HeroSection />
+        <FeaturedSection />
+      </main>
+      <Footer />
     </div>
   );
 };
